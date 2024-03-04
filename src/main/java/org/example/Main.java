@@ -17,4 +17,4 @@ public class Main {
         }
     }
 }
-//target:master+1
+//target:dev/*
