@@ -17,4 +17,4 @@ public class Main {
         }
     }
 }
-//target:dev/*+1
+//target:dev/*+1 exclude
