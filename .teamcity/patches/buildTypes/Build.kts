@@ -11,6 +11,14 @@ To apply the patch, change the buildType with id = 'Build'
 accordingly, and delete the patch script.
 */
 changeBuildType(RelativeId("Build")) {
+    vcs {
+
+        check(branchFilter == "+pr:blabla") {
+            "Unexpected option value: branchFilter = $branchFilter"
+        }
+        branchFilter = "+pr:*"
+    }
+
     features {
         val feature1 = find<PullRequests> {
             pullRequests {
