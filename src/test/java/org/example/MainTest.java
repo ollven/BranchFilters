@@ -7,6 +7,6 @@ class MainTest {
     @Test
     public void testThatAlwaysFails() throws InterruptedException {
         Thread.sleep(120000);
-        Assertions.assertTrue(true);    }
+        Assertions.assertTrue(false);    }
 
 }
