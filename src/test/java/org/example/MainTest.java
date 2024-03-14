@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 class MainTest {
     @Test
     public void testThatAlwaysFails() throws InterruptedException {
-        Thread.sleep(120000);
+        Thread.sleep(100);
         Assertions.assertTrue(false);    }
 
 }
