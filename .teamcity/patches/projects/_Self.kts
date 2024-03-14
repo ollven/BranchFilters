@@ -18,7 +18,10 @@ changeProject(DslContext.projectId) {
                 name = "For matrix build"
                 terminateIdleMinutes = 30
                 region = AmazonEC2CloudProfile.Regions.EU_WEST_DUBLIN
-                authType = instanceIAMRole()
+                authType = accessKey {
+                    keyId = "credentialsJSON:33d3c098-930b-426f-96de-27433c1a892e"
+                    secretKey = "credentialsJSON:5a4d1301-54d2-49aa-be81-992919d2b286"
+                }
             }
         }
     }
