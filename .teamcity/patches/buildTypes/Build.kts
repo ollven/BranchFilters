@@ -1,6 +1,7 @@
 package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.matrix
 import jetbrains.buildServer.configs.kotlin.triggers.retryBuild
 import jetbrains.buildServer.configs.kotlin.ui.*
 
@@ -25,6 +26,17 @@ changeBuildType(RelativeId("Build")) {
         add {
             retryBuild {
                 delaySeconds = 15
+            }
+        }
+    }
+
+    features {
+        add {
+            matrix {
+                os = listOf(
+                    value("Linux"),
+                    value("Mac OS")
+                )
             }
         }
     }
