@@ -2,6 +2,7 @@ package patches.projects
 
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.Project
+import jetbrains.buildServer.configs.kotlin.amazonEC2CloudImage
 import jetbrains.buildServer.configs.kotlin.amazonEC2CloudProfile
 import jetbrains.buildServer.configs.kotlin.ui.*
 
@@ -12,6 +13,18 @@ accordingly, and delete the patch script.
 */
 changeProject(DslContext.projectId) {
     features {
+        add {
+            amazonEC2CloudImage {
+                id = "PROJECT_EXT_9"
+                profileId = "amazon-8"
+                agentPoolId = "-2"
+                name = "For matrix build"
+                vpcSubnetId = "subnet-043178c302cabfe37"
+                instanceType = "c1.medium"
+                securityGroups = listOf("sg-072d8bfa0626ea2a6")
+                source = Source("ami-0f14dd194999ed328")
+            }
+        }
         add {
             amazonEC2CloudProfile {
                 id = "amazon-8"
