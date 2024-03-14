@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         // Press Opt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
-        Thread.sleep(120000);
+        Thread.sleep(60000);
         System.out.printf("Hello and welcome!");
 
         // Press Ctrl+R or click the green arrow button in the gutter to run the code.
@@ -19,4 +19,4 @@ public class Main {
         }
     }
 }
-//retry-1
+//retry-123
