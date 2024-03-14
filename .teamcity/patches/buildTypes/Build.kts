@@ -16,10 +16,7 @@ changeBuildType(RelativeId("Build")) {
         check(branchFilter == "+pr:blabla") {
             "Unexpected option value: branchFilter = $branchFilter"
         }
-        branchFilter = """
-            +:production
-            +:<default>
-        """.trimIndent()
+        branchFilter = "+pr:*"
     }
 
     triggers {
