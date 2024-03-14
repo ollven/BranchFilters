@@ -1,6 +1,7 @@
 package patches.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.triggers.retryBuild
 import jetbrains.buildServer.configs.kotlin.ui.*
 
 /*
@@ -18,5 +19,13 @@ changeBuildType(RelativeId("Build")) {
             +:production
             +:<default>
         """.trimIndent()
+    }
+
+    triggers {
+        add {
+            retryBuild {
+                delaySeconds = 15
+            }
+        }
     }
 }
