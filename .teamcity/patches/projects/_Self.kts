@@ -24,7 +24,7 @@ changeProject(DslContext.projectId) {
                 instanceTags = mapOf(
                     "Owner" to "olga.sventukh@jetbrains.com"
                 )
-                source = Source("ami-0f14dd194999ed328")
+                source = Source("ami-0e303c7d2285132c7")
             }
         }
         add {
