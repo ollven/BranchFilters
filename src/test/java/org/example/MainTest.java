@@ -20,4 +20,4 @@ class MainTest {
 //errttrttgth
 /////fkjflkjwelkfjkl
 ///with +:* in the trigger filter
-
+////with +:pr in the trigger filter
