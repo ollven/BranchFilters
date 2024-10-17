@@ -19,4 +19,5 @@ class MainTest {
 /////ewfwefwffrwfrw
 //errttrttgth
 /////fkjflkjwelkfjkl
+///with +:* in the trigger filter
 
