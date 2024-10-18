@@ -23,3 +23,4 @@ class MainTest {
 ////with +:pr in the trigger filter
 ////+:pr in the trigger filter one more try
 ///+:*
+///with updated target
