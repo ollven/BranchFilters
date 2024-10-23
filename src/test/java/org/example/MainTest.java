@@ -15,5 +15,3 @@ class MainTest {
 ////deedeewwed
 
 ////ddfdfdsfdfdfgrtrger
-////erqrefregretg
-/////ewfwefwffrwfrw
