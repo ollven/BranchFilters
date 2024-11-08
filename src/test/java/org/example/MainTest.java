@@ -21,5 +21,4 @@ class MainTest {
 ///+pr
 ////eewewewew
 ////dqewdedfwe
-/////ededewdew
 //////ddswqrfwetg
